@@ -1,1 +1,0 @@
-# Arqui2_silla_mern
