@@ -13,7 +13,33 @@ import {
   Col,
 } from "react-bootstrap";
 
+
+
+
+
+function getData(){
+  fetch('http://localhost:4000/api/tasks/',{mode:'cors'})
+  .then((response) => {
+    //console.log("vino aquí",response);
+    return  response.json();
+  })
+  .then((dato) => {
+    return dato;
+  }).then(function(dato) {       // `names` is the value resolved by the promise...
+    datos = dato;      // and you can now add it to your $scope
+ });    
+}
+
+
+
+
 function User() {
+  getData();
+  //Consulta al back y get información
+  console.log("****************************");
+  console.log(datos);
+  
+
   //Variables para cargar los datos del usuario activo
   let nombreUsuario = "usuario1";
   let nombre = "nombre1";

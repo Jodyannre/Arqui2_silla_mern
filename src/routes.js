@@ -20,7 +20,6 @@ import Perfil from "views/Perfil.js";
 import Historial from "views/Historial.js";
 import DiasUso from "views/DiasUso";
 import Login from "views/login";
-import Users from "routes/users"
 global.miNumero = 205;
 
 const dashboardRoutes = [
@@ -39,13 +38,6 @@ const dashboardRoutes = [
     layout: "/admin",
   },
   {
-    path: "/user",
-    name: "Perfil",
-    icon: "nc-icon nc-circle-09",
-    component: Perfil,
-    layout: "/admin",
-  },
-  {
     path: "/historial",
     name: "Historial",
     icon: "nc-icon nc-notes",
@@ -58,13 +50,6 @@ const dashboardRoutes = [
     icon: "nc-icon nc-paper-2",
     component: DiasUso,
     layout: "/admin",
-  },
-  {
-    path: "/users",
-    name: "Users",
-    icon: "nc-icon nc-paper-2",
-    component: DiasUso,
-    layout: "/",
   },
 ];
 

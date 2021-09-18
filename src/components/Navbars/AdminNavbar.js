@@ -22,6 +22,7 @@ import { Navbar, Container, Nav, Dropdown, Button } from "react-bootstrap";
 import routes from "routes.js";
 
 function Header() {
+  let idSillaNav = idUsuario;
   const location = useLocation();
   const mobileSidebarToggle = (e) => {
     e.preventDefault();
@@ -75,7 +76,7 @@ function Header() {
                 href="#buscar"
                 onClick={(e) => e.preventDefault()}
               >
-                <span className="d-lg-block">Silla # 457334</span>
+                <span className="d-lg-block">Silla#{idSillaNav}</span>
               </Nav.Link>
             </Nav.Item>
           </Nav>
