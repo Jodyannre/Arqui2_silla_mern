@@ -1,0 +1,6 @@
+package-lock.json
+node_modules/
+.eslintcache
+
+Arqui_silla/back/node_modules
+Arqui_silla/front/node_modules
